@@ -1,0 +1,41 @@
+.mario {
+    width: 65px;
+    height: 100px;
+    background: url('../../images/mario_sprite.png') no-repeat;
+    position:absolute;
+}
+
+
+
+input[type='checkbox'] {
+    display: none;
+}
+
+input:checked+.mario {
+    animation-timing-function: step-end;
+}
+
+@keyframes run {
+    25% {
+        background-position: -85px 0;
+    }
+
+    50% {
+        width: 45px;
+        background-position: -150px 0;
+    }
+
+    75% {
+        width: 55px;
+        background-position: -197px 0;
+    }
+}
+
+@keyframes jump {
+    50%{
+        bottom: 30%;    }
+
+        100%{
+            bottom: 10%;
+        }
+}
