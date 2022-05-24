@@ -7,7 +7,13 @@ import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
 })
 export class BoxComponent implements OnInit {
   @Input() src: string | undefined;
+  @Input() height: string | undefined;
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    if (this.src) {
+      //github.com/TanushaJain/resume/blob/main/src/images/graduationresize.png?raw=true
+      this.src = `https://github.com/TanushaJain/resume/blob/main/src/images/${this.src}/?raw=true`;
+    }
+  }
 }

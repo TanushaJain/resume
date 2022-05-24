@@ -11,6 +11,8 @@ import { BoxshakeDirective } from './boxshake.directive';
 import { HeadingComponent } from './heading/heading.component';
 import { CardComponent } from './card/card.component';
 import { IconsrcDirective } from './iconsrc.directive';
+import { BrickComponent } from './brick/brick.component';
+import { InteractiveComponent } from './interactive/interactive.component';
 
 @NgModule({
   declarations: [
@@ -22,13 +24,12 @@ import { IconsrcDirective } from './iconsrc.directive';
     BoxshakeDirective,
     HeadingComponent,
     CardComponent,
-    IconsrcDirective
+    IconsrcDirective,
+    BrickComponent,
+    InteractiveComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

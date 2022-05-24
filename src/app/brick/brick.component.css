@@ -1,0 +1,7 @@
+.box {
+  width: 77px;
+  height: 78px;
+  background: url("../../images/box_spriteresize.png") no-repeat;
+  background-position: -262px -18px;
+  position: absolute;
+}
