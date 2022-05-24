@@ -1,0 +1,53 @@
+.box {
+  width: 77px;
+  height: 78px;
+  background: url("../../images/box_spriteresize.png") no-repeat;
+  background-position: -262px -18px;
+  position: absolute;
+  /* animation: ; */
+}
+
+.icon {
+  width: 77px;
+  height: 56px;
+  background: no-repeat;
+  position: absolute;
+  bottom: 50%;
+  left: 30%;
+  /* display: none; */
+}
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(30px);
+  }
+  25% {
+    transform: translateY(25px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+
+  75% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes glow {
+  50% {
+    filter: contrast(200%);
+  }
+}
+
+@keyframes translate {
+  0% {
+    transform: translate(-40px);
+  }
+
+  50% {
+    transform: translateX(-20px);
+  }
+}
